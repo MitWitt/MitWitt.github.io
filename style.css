@@ -1,0 +1,54 @@
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  }
+
+h4 {
+  color: white;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  }
+
+p {
+  color: hwb(193 63% 0%);
+  text-align: center;
+  font-family: Tahoma;
+}
+
+body {
+  max-width: 900px; 
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr {
+  margin: auto;
+  max-width: 800px;
+}
+
+html {
+  background-color: hsl(0, 0%, 8%);
+}
+
+img {
+  width: 800px;
+  max-width: 100%
+}
+
+a {
+  font-family: Tahoma, sans-serif;
+  color: hwb(193 86% 1%);
+  margin: auto;
+}
+
+ul {
+  font-family: Tahoma, sans-serif;
+  color: #00c3ff;
+  margin: auto;
+  width: 800px;
+  max-width: 100%
+}

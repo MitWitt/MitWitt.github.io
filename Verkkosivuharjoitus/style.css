@@ -1,0 +1,27 @@
+﻿img {width: 750px; max-width: 100%}
+
+div {background-color: #D3D5E8;}
+
+p {font-family: Trebuchet MS;}
+p {margin: 30px;}
+
+.fancy {color: #585858;}
+
+
+#eka-laatikko {background-color: lightgray;}
+
+h1 {font-family: Trebuchet MS;
+    text-align: center
+}
+h1 {margin: 30px;}
+h2 {font-family: Trebuchet MS;}
+h2 {margin: 30px;}
+
+body {margin: auto; max-width: 800px}
+body {background-color: #474747}
+
+nav {
+    font-family: Trebuchet MS;
+    text-align: center;
+    margin: 10px;
+}
