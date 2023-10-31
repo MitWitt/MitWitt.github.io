@@ -17,7 +17,7 @@ p {
 }
 
 body {
-  max-width: 900px; 
+  max-width: 1000px; 
   width: auto;
   height: auto;
   margin: auto;
@@ -35,7 +35,7 @@ html {
 }
 
 img {
-  width: 800px;
+  width: 900px;
   max-width: 100%
 }
 
