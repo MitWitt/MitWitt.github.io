@@ -1,0 +1,381 @@
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+    margin: 0;
+	height: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+.top-header {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	width: 100%;
+	margin-left: 0px;
+	box-shadow: 0px 20px 40px rgba(14, 14, 14, 0.574);
+    justify-content: left;
+    position: fixed;
+    top: -70px;
+	z-index: 1;
+	transition: top 0.5s;
+}
+
+.top-header.visible {
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin-left: auto;
+    margin-right: 20px;
+	margin-left: 20px;
+    display: flex;
+}
+
+#query {
+    margin-right: 10px;
+}
+
+#main-menu { 
+	list-style-type: none; 
+	display: flex;
+	gap: 25px;
+	padding: 13px;
+	margin-left: 20px;
+	font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-content: center;
+}
+
+#main-menu a { 
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(0, 0, 0);
+}
+
+#main-menu a:hover { 
+	color: #33ae9f; 
+	text-decoration:underline;
+}
+
+#footer-menu { 
+	list-style-type: none; 
+	gap: 25px;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+    align-content: center;
+	border-bottom:#004040;
+}
+
+#footer-menu a:hover { 
+	color: #33ae9f; 
+	text-decoration:underline;
+}
+
+#footer-menu a { 
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(0, 0, 0);
+}
+
+.image-container {	
+	background-image: url("/images/cover-photo.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+    overflow: hidden;
+}
+.overlay-text {
+	color: #000000; 
+	font-size: 23px; 
+	text-align: left;
+	margin: 5%;
+	max-width: 70%;
+	max-height: 50%;
+    text-shadow: 0px 0px 80px rgb(255, 255, 255);
+}
+
+/* Business logo font in the navbar */
+.h2-header { 
+	font-size: 25px;
+	display: flex;
+	margin-left: 20px;
+	font-family: 'Bakbak One', sans-serif;
+	color: #0b8185;
+}
+
+/* Cover image slogan */
+.h1-header {
+	color: #004040;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 45px;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+/* Div main title font */
+h2 {
+    font-size: 30px;
+	font-family: 'Poppins', sans-serif;
+	color: #1e1e1e;
+}
+
+/* Article titles */
+h3 {
+    font-size: 20px;
+	font-family: 'Noto Sans', sans-serif;
+	color: #1e1e1e;
+}
+
+/* Small title font */
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-style: light;
+	font-size: 18px;
+}
+
+.p1 {
+	max-width: 60%;
+    color: #004040;
+	font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.button { 
+	padding: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	border-radius: 7%;
+	border: 1px solid #b0c5ac;
+    background-color: #6db4b2;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.102);
+	margin-top: auto;
+}
+
+.button:hover { 
+	color: rgb(255, 255, 255); 
+	background: #67afab; 
+    border: 1px solid #b0c5ac;
+    border-radius: 7%;
+	transition: background,color 500ms ease;
+	cursor: pointer;
+}
+
+.section1 {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+p {
+    color: #004040;
+	font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+	text-align: left;
+	margin-top: auto;
+}
+
+.a1 {
+    max-width: 500px;
+    margin:  30px;
+    display: flex;
+    flex-direction: column;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.a2 {
+    max-width: 500px;
+    margin:  30px;
+    display: flex;
+    flex-direction: column;
+	padding-top: 20px;
+}
+
+.articles-container {
+    text-align: center;
+    padding-top: 50px;
+	/*background-color: #bdd5c0;*/
+	padding-bottom: 50px;
+	max-width: 1400px;
+	background-color:rgb(240, 240, 240);
+	margin: auto;
+}
+
+.article-image1 {
+    background-image: url("/images/beach.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+	max-height: 35vh;
+    position: relative;
+    top: 0;
+	overflow: hidden;
+}
+
+.article-image2 {
+    background-image: url("/images/hacks.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+	max-height: 35vh;
+    position: relative;
+    top: 0;
+	overflow: hidden;
+}
+
+.article-image3 {
+    background-image: url("/images/deals.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+	max-height: 35vh;
+    position: relative;
+    top: 0;
+	overflow: hidden;
+}
+
+.article-image4 {
+    background-image: url("/images/family.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+	max-height: 35vh;
+    position: relative;
+    top: 0;
+	overflow: hidden;
+}
+
+.second-header {
+	background-image: url("/images/beach2.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+    overflow: hidden;
+}
+
+footer {
+	background-color: #ffffff;
+	height: 70px;
+	display: row;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-p {
+	color:#000000;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
+	border-top: #004040;
+	font-size: 12px;
+}
+
+.services-container {
+	text-align: center;
+    padding-top: 30px;
+	padding-bottom: 50px;
+	margin: auto;
+	align-items: center;
+	width: 100%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+.md-48 {
+	font-size: 100px !important;
+	color:#0b8185;
+	padding: 10px;
+}
+
+.numbers-section {
+	background-color: #004040;
+	text-align: center;
+    padding-top: 70px;
+	padding-bottom: 100px;
+	width: 100%;
+	color: #ecfdfd;
+}
+
+.number-item {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.number {
+    font-size: 60px;
+    font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.category {
+    display: block;
+    font-size: 16px;
+    color: #ecfdfd;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.numbers-section h2 {
+	color: #ecfdfd;
+	padding-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    main
+    {width: 100%;}
+}
+
+aside {
+    width: 20%;
+	background-color: #0b8185;
+	text-align: center;
+	margin: 0;
+	height: 100%;
+	color: #ecfdfd;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.p2 {
+    color: #ecfdfd;
+	font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.ah2 {
+	color: #ecfdfd;
+	font-size: 25px;
+	text-align: left;
+	text-decoration: underline;
+}
+
