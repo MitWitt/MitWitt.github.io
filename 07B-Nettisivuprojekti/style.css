@@ -94,7 +94,7 @@ form {
 }
 
 .image-container {	
-	background-image: url("/images/cover-photo.jpg");
+	background-image: url("/07B-Nettisivuprojekti/images/cover-photo.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -223,7 +223,7 @@ p {
 }
 
 .article-image1 {
-    background-image: url("/images/beach.jpg");
+    background-image: url("/07B-Nettisivuprojekti/images/beach.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh; 
@@ -234,7 +234,7 @@ p {
 }
 
 .article-image2 {
-    background-image: url("/images/hacks.jpg");
+    background-image: url("/07B-Nettisivuprojekti/images/hacks.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh; 
@@ -245,7 +245,7 @@ p {
 }
 
 .article-image3 {
-    background-image: url("/images/deals.jpg");
+    background-image: url("/07B-Nettisivuprojekti/images/deals.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh; 
@@ -256,7 +256,7 @@ p {
 }
 
 .article-image4 {
-    background-image: url("/images/family.jpg");
+    background-image: url("/07B-Nettisivuprojekti/images/family.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh; 
@@ -267,7 +267,7 @@ p {
 }
 
 .second-header {
-	background-image: url("/images/beach2.jpg");
+	background-image: url("/07B-Nettisivuprojekti/images/beach2.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 80vh;
