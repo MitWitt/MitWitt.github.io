@@ -1,0 +1,344 @@
+
+
+
+ /*----------------------------*/
+ /*                            */
+ /*  EDIT THIS FILE TO APPLY   */
+ /*  YOUR DESIRED STYLE!       */
+ /*                            */
+ /*----------------------------*/
+
+
+
+/*--------- BACKGROUND ---------------------*/
+
+html { 
+	/*koko sivun tausta on valkoinen.
+	Muuta haluamaksesi*/
+	background: rgb(23, 23, 24); 
+
+	/*Jos määrität html-tagissa fontteja, 
+	taustavärejä tai tekstin värejä,
+	samat määritykset tulevat kaikkiin sisällä oleviin
+	elementteihin. Näin voit määrittää esim. koko sivun 
+	fontit, värit ym. ja sitten muuttaa haluamissasi
+	elementeissä tyylin toiseksi.*/
+
+	margin: 0;
+    padding: 0;
+
+}
+
+body { 
+	
+	/*Kaiken sisällön ympärillä on body. 
+	Voit muuttaa myös bodyn taustaväriä tai
+	esim. lisätä paddingin, jotta elementit eivät 
+	olisi reunassa kiinni.*/
+	
+	/*Tällä koodilla voit tehdä niin, että yli 900px
+	leveässä näytössä body-tagi jää vain 900px leveäksi,
+	ja reunoille jää tyhjää. Voit muuttaa tätä miten haluat.*/
+
+	margin: auto; /*tämä keskittää body-tagin sivusuunnassa*/
+
+}
+
+/*--------- HEADER ---------------------*/
+
+header {
+	background-color: rgb(37, 37, 39);
+	display: flex;
+	width: 100%;
+	margin-left: 0px;
+	box-shadow: 0px 30px 50px rgb(14, 14, 14);
+
+}
+
+/*Header text on top of the menu*/
+header h1 { 
+	/*Pääotsikko*/
+
+	/*Täällä kannattaa muokata background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+	/*Laita myös ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+
+	/*Voit halutessasi myös esim. keskittää otsikon (text-align: center;)*/
+
+	font-size: 25px;
+	display: flex;
+	padding: 9px;
+	margin-left: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #45E5D2;
+}
+
+/*--------- MAIN MENU ---------------------*/
+
+/*Menu*/
+#main-menu { 
+	list-style-type: none; 
+	
+	/*Voit tehdä tästä flexboxin, 
+	niin valikon napit menevät vierekkäin*/
+
+	/*Laita tässä ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+	
+	/*Voi muokata täällä myös background-, color-arvoja.*/
+	
+	display: flex;
+	gap: 25px;
+	padding: 10px;
+	margin-left: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Menu item*/
+#main-menu li {
+	/*Laita tässä ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+
+	/*Voi muokata täällä myös background-, color-arvoja.*/
+	
+}
+
+/*Link in menu item*/
+#main-menu a { 
+
+	text-decoration: none; /*poistaa linkin alleviivauksen*/
+
+	/*Voi muokata täällä myös background-, color- 
+	font-size- ja font-family-arvoja.*/
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+/*Menu item when mouse over*/
+#main-menu a:hover { 
+	
+	/*Tässä määritellään, miltä valikon linkki näyttää, 
+	kun kursori on sen päällä. Muuta paremmaksi */
+	color: #45E5D2; 
+	text-decoration:underline;
+
+}
+
+/*------- ARTICLE BUTTONS -------------------*/
+/*Button in end of each article*/
+.button { 
+	/*saatat haluta tehdä napista aika samanlaisen
+	kuin valikkolinkit, mutta toisenlainenkin 
+	voi olla ihan tyylikäs*/
+
+	/*Voi muokata täällä myös background-, color- 
+	font-size- ja font-family-arvoja.*/
+	
+	/*Tämä on a-elementti, ja se on oletuksena 
+		display: inline; 
+	Siksi sen kokoa tai paikkaa ym. ei voi muuttaa.
+	Jotta nappia on helpompi käsitellä, voi muuttaa sen 
+		display: block;
+		
+	Ymmärtääksesi paremmin mitä on block ja inline ym., 
+	katso tämä video: https://www.youtube.com/watch?v=9T8uxp5hQ60	
+	*/
+
+	/*Tällä koodilla saat fancyn varjon :) 
+		box-shadow: 0px 2px 10px rgba(0,0,0,50%); 
+	*/
+
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	border-radius: 5%;
+	border: 1px solid #45E5D2;
+}
+
+/*Button when mouse over*/
+.button:hover { 
+	/*Tässä määritellään, nappi näyttää, 
+	kun kursori on sen päällä. Muuta paremmaksi */
+	color: rgb(0, 0, 0); 
+	background: #45E5D2; 
+	transition: background,color 600ms ease;
+	cursor: pointer;
+
+	
+	/*Voit halutessasi laittaa vaikka koko 
+	artikkelin muuttumaan jotenkin hiukan, 
+	kun sen päällä on kursori.. :) */
+}
+
+
+/*--------- ARTICLES ---------------------*/
+
+/*Artikkeleiden ympärillä*/
+main {
+	/*Kaikki "artikkelit" ovat main-tagin sisällä.
+	Jos pidät tämän flexboxina, artikkelit menevät
+	vierekkäin leveässä näytössä. 
+	ja sitten artikkeleihin (ks. alla) esim. ,
+	jolloin artikkelit asettuvat vierekkäin.*/
+
+	margin: auto;
+	display: flex; flex-wrap:wrap; justify-content: center;
+}
+
+/*Frame of each "article"*/
+article {
+ 	/*Jos main on flexbox, 
+	tämä tekee sen, että "artikkelit" mahtuvat vierekkäin.*/
+	
+	/*Yksittäisen artikkelin tausta:
+	Saatat haluta  muokata täällä background-, color- 
+	sekä font-size- ja font-family-arvoja.*/
+
+	/*Tärkeää: Laita tässä marginaalit ja paddingit paremmin, 
+	niin näyttää tyylikkäämmältä! Teksti, kuva ym. ei saa olla 
+	reunaan asti, vaan reunassa pitää olla marginaali (teknisesti
+	margin tai padding).*/
+	color: white;
+}
+
+.a2 {
+	
+	max-width: 400px;
+	padding: 30px;
+	background-color: rgb(28, 28, 28);
+}
+
+.a2:hover {
+	background-color: rgb(35, 35, 36);
+	transition: background 400ms ease;
+}
+
+.a3 {
+	max-width: 100%;
+	padding: 30px;
+	background-color: rgb(23, 23, 24);
+	text-align: center;
+}
+
+.a4 {
+	max-width: 100%;
+	padding: 30px;
+	background-color: rgb(23, 23, 24);
+	text-align: center;
+}
+
+/*article title*/
+article h2 { 
+
+	/*Yksittäisen artikkelin otsikko*/
+
+	/*Kannattaa muokata täällä background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+	/*Saatat haluta muokata täällä myös 
+	background-, color-, margin- ja padding-
+	font-size- ja font-family-arvoja.*/
+
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.h2-header {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 55px;
+	margin: 0;
+}
+
+/*article text*/
+article p { 
+	/*Artikkelin pienempi teksti*/
+
+	/*Saatat haluta muokata täällä 
+	background-, color-, margin- ja padding-
+	font-size- ja font-family-arvoja.*/
+}
+
+/* "Images" */
+.article-image { 
+    max-width: 100%; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
+
+	/*Kuva voi olla koko artikkelin levyinen tai pienempi. 
+	Esim. alla olevalla kuvasta tulisi pienempi (=50%)
+	ja teksti kiertää kuvaa (=float):
+		width: 50%;
+		min-width: 150px;
+		float: left; 
+	*/
+}
+
+.article-image1 { 
+    max-width: 100%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.article-image-bottom { 
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/*-------- FOOTER ---------------*/
+
+footer {
+	/*Kannattaa laittaa footeriin vähintään padding 
+	ja ehkä eri taustaväri, jotta se erottuu hiukan.*/
+	max-width: 900px;
+	margin: auto;
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+.p1 {
+	max-width: 60%;
+}
+
+.image-container {	
+	background-image: url("/05A-Designtehtävä/images/header-image.png");
+	background-size: cover;
+	background-position: center;
+	height: 900px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.image-container2 {	
+	background-image: url("/05A-Designtehtävä/images/studio.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: absolute;
+}
+
+.image-container img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+
+.overlay-text {
+	color: #fff; 
+	font-size: 23px; 
+	text-align: left;
+	margin: 5%;
+	max-width: 55%;
+}
+
